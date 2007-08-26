@@ -28,8 +28,8 @@ scons
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_DIR%{_bindir}
-install tint $RPM_BUILD_DIR%{_bindir}/tint
+install -d $RPM_BUILD_ROOT%{_bindir}
+install tint $RPM_BUILD_ROOT%{_bindir}/tint
 
 
 %clean
