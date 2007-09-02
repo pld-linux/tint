@@ -1,5 +1,6 @@
-#
+# TODO: optflags
 Summary:	Alter photos by selectively choosing tints
+Summary(pl.UTF-8):	Modyfikacja zdjęć poprzez selektywny wybór odcieni
 Name:		tint
 Version:	1.0.1
 Release:	1
@@ -19,6 +20,12 @@ Tint is a photo editor for colour-select effects. It automatically
 clusters the colours of a photo into groups, and allows each colour to
 be switched on or off to create the desired effect.
 
+%description -l pl.UTF-8
+Tint to edytor zdjęć do efektów związanych z wyborem kolorów.
+Automatycznie rozdziela kolory zdjęcia na grupy i pozwala na włączanie
+i wyłączanie poszczególnych kolorów w celu osiągnięcia pożądanego
+efektu.
+
 %prep
 %setup -q
 %patch0 -p1
@@ -29,8 +36,8 @@ scons
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install tint $RPM_BUILD_ROOT%{_bindir}/tint
 
+install tint $RPM_BUILD_ROOT%{_bindir}/tint
 
 %clean
 rm -rf $RPM_BUILD_ROOT
