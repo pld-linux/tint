@@ -10,7 +10,7 @@ Source0:	http://www.indii.org/files/tint/releases/%{name}-%{version}.tar.gz
 # Source0-md5:	36dbab3a0540014b49b771af8db25837
 Patch0:		%{name}-wxgtk.patch
 URL:		http://www.indii.org/software/tint/
-BuildRequires:	boost-uBLAS-devel
+BuildRequires:	boost-devel >= 1.35.0
 BuildRequires:	scons
 BuildRequires:	wxGTK2-unicode-devel >= 2.8.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
